@@ -1,4 +1,6 @@
 Yams::Application.routes.draw do
+  get "/manage" => "manage#index"
+
   get "home/index"
   root :to => "home#index"
 
